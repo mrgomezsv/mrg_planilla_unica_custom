@@ -1,0 +1,98 @@
+<odoo>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_00">
+        <field name="code">00</field>
+        <field name="name">Si no se tiene ningún código de observación a Detallar</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_01">
+        <field name="code">01</field>
+        <field name="name">Sin cambios con respecto al mes anterior</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_02">
+        <field name="code">02</field>
+        <field name="name">Pagos adicionales</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_03">
+        <field name="code">03</field>
+        <field name="name">Aprendices</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_04">
+        <field name="code">04</field>
+        <field name="name">Pensionado</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_05">
+        <field name="code">05</field>
+        <field name="name">Licencia</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_06">
+        <field name="code">06</field>
+        <field name="name">Incapacidad</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_07">
+        <field name="code">07</field>
+        <field name="name">Retiro del Trabajador de la empresa</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_08">
+        <field name="code">08</field>
+        <field name="name">Ingreso o Reingreso del Trabajador</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_09">
+        <field name="code">09</field>
+        <field name="name">Vacaciones</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_10">
+        <field name="code">10</field>
+        <field name="name">Vacaciones más pagos Adicionales</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_11">
+        <field name="code">11</field>
+        <field name="name">Planillas catorcenales y semanales fraccionadas</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_12">
+        <field name="code">12</field>
+        <field name="name">Cotizaciones patronales por subsidios del ISSS</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_13">
+        <field name="code">13</field>
+        <field name="name">Cotizante al IPSFA</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_14">
+        <field name="code">14</field>
+        <field name="name">Cotizante Bienestar Magisterial</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_15">
+        <field name="code">15</field>
+        <field name="name">Régimen especial del Sector Doméstico</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_16">
+        <field name="code">16</field>
+        <field name="name">Régimen especial de Marino mercante</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_17">
+        <field name="code">17</field>
+        <field name="name">Régimen especial de Regidores</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_18">
+        <field name="code">18</field>
+        <field name="name">Complemento de Salario</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_19">
+        <field name="code">19</field>
+        <field name="name">Retiro por fallecimiento del Trabajador</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_20">
+        <field name="code">20</field>
+        <field name="name">Vacaciones Salario Mixto</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_21">
+        <field name="code">21</field>
+        <field name="name">Pagos Adicionales y Vacaciones Salario Mixto</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_22">
+        <field name="code">22</field>
+        <field name="name">Pago de complemento por Subsidio</field>
+    </record>
+    <record model="trsvpay.unique.payroll.code.tr" id="unique_payroll_code_23">
+        <field name="code">23</field>
+        <field name="name">Trabajador independiente régimen genera</field>
+    </record>
+</odoo>

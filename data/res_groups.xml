@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Habilitamos el acceso a Código de Planillas para todos mediante XML directo (Odoo carece del external ID de este modelo) -->
+        <record id="access_trsvpay_unique_payroll_code_tr_user" model="ir.model.access">
+            <field name="name">trsvpay.unique.payroll.code.tr.user</field>
+            <field name="model_id" search="[('model', '=', 'trsvpay.unique.payroll.code.tr')]"/>
+            <field name="group_id" ref="base.group_user"/>
+            <field name="perm_read">1</field>
+            <field name="perm_write">1</field>
+            <field name="perm_create">1</field>
+            <field name="perm_unlink">1</field>
+        </record>
+    </data>
+    <data>
+        <!-- Hacemos que todos los usuarios internos hereden el grupo de Planillas Especiales automáticamente -->
+        <record id="base.group_user" model="res.groups">
+            <field name="implied_ids" eval="[(4, ref('treming_sv_payroll.group_special_payroll_tr'))]"/>
+        </record>
+
+        <!-- Habilitamos el botón de Crear en la vista Form de hr.planilla -->
+        <record id="view_form_hr_planilla_custom_create" model="ir.ui.view">
+            <field name="name">hr.planilla.form.custom.create</field>
+            <field name="model">hr.planilla</field>
+            <field name="inherit_id" ref="treming_sv_payroll.view_form_hr_planilla"/>
+            <field name="arch" type="xml">
+                <form position="attributes">
+                    <attribute name="create">1</attribute>
+                </form>
+            </field>
+        </record>
+
+        <!-- Habilitamos el botón de Crear en la vista Tree de hr.planilla -->
+        <record id="view_tree_hr_planilla_custom_create" model="ir.ui.view">
+            <field name="name">hr.planilla.tree.custom.create</field>
+            <field name="model">hr.planilla</field>
+            <field name="inherit_id" ref="treming_sv_payroll.view_tree_hr_planilla"/>
+            <field name="arch" type="xml">
+                <tree position="attributes">
+                    <attribute name="create">1</attribute>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Liberamos el campo 'special_type_tr_id' en el wizard (Generar Planillas) -->
+        <record id="hr_payslip_employees_form_custom_free" model="ir.ui.view">
+            <field name="name">hr.payslip.employees.form.custom.free</field>
+            <field name="model">hr.payslip.employees</field>
+            <field name="inherit_id" ref="treming_sv_payroll.hr_payslip_employees_form_inherit"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='special_type_tr_id']" position="attributes">
+                    <attribute name="groups"></attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
