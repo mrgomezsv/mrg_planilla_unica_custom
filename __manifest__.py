@@ -4,7 +4,7 @@
     'description': 'Habilita el acceso a Planilla Única (Especiales) por defecto para todos los usuarios.',
     'summary': 'Módulo custom para saltar restricción de permisos en Planillas Especiales',
     'author': 'MRG',
-    'depends': ['base', 'treming_sv_payroll'],
+    'depends': ['base', 'treming_sv_payroll', 'hr_payroll', 'hr_work_entry_contract'],
     'data': [
         'security/ir.model.access.csv',
         'data/res_groups.xml',

@@ -8,3 +8,4 @@ if 'unica' not in employer_target:
 
 from . import trsvpay_unique_payroll_code_tr
 from . import hr_employer_contributions_custom
+from . import hr_contract
