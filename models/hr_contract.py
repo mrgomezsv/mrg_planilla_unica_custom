@@ -6,11 +6,11 @@ from datetime import datetime, date
 class HrContract(models.Model):
     _inherit = 'hr.contract'
 
-    def _generate_work_entries(self, date_start, date_stop, force=False):
+    def _generate_work_entries(self, date_start, date_stop, *args, **kwargs):
         # Convierte date_start y date_stop a datetime si son de tipo date
         if isinstance(date_start, date) and not isinstance(date_start, datetime):
             date_start = datetime.combine(date_start, datetime.min.time())
         if isinstance(date_stop, date) and not isinstance(date_stop, datetime):
             date_stop = datetime.combine(date_stop, datetime.max.time())
             
-        return super()._generate_work_entries(date_start, date_stop, force=force)
+        return super()._generate_work_entries(date_start, date_stop, *args, **kwargs)
