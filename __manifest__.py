@@ -1,6 +1,6 @@
 {
     'name': 'Acceso a Planilla Unica Custom',
-    'version': '16.0.1.0.0',
+    'version': '18.0.1.0.0',
     'description': 'Habilita el acceso a Planilla Única (Especiales) por defecto para todos los usuarios.',
     'summary': 'Módulo custom para saltar restricción de permisos en Planillas Especiales',
     'author': 'MRG',

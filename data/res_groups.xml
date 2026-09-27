@@ -30,15 +30,15 @@
             </field>
         </record>
 
-        <!-- Habilitamos el botón de Crear en la vista Tree de hr.planilla -->
+        <!-- Habilitamos el botón de Crear en la vista Tree/List de hr.planilla -->
         <record id="view_tree_hr_planilla_custom_create" model="ir.ui.view">
             <field name="name">hr.planilla.tree.custom.create</field>
             <field name="model">hr.planilla</field>
             <field name="inherit_id" ref="treming_sv_payroll.view_tree_hr_planilla"/>
             <field name="arch" type="xml">
-                <tree position="attributes">
+                <xpath expr="/*" position="attributes">
                     <attribute name="create">1</attribute>
-                </tree>
+                </xpath>
             </field>
         </record>
 
