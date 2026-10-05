@@ -1,4 +1,4 @@
-﻿{
+{
     'name': 'Acceso a Planilla Unica Custom',
     'version': '20.0.1.0.0',
     'description': 'Habilita el acceso a Planilla Única (Especiales) por defecto para todos los usuarios.',
