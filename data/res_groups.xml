@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data noupdate="1">
-        <!-- Habilitamos el acceso a Código de Planillas para todos mediante XML directo (Odoo carece del external ID de este modelo) -->
-        <record id="access_trsvpay_unique_payroll_code_tr_user" model="ir.model.access">
-            <field name="name">trsvpay.unique.payroll.code.tr.user</field>
-            <field name="model_id" search="[('model', '=', 'trsvpay.unique.payroll.code.tr')]"/>
-            <field name="group_id" ref="base.group_user"/>
-            <field name="perm_read">1</field>
-            <field name="perm_write">1</field>
-            <field name="perm_create">1</field>
-            <field name="perm_unlink">1</field>
-        </record>
-    </data>
+    <!-- Acceso a Código de Planillas manejado en security/ir.access.csv -->
     <data>
         <!-- Hacemos que todos los usuarios internos hereden el grupo de Planillas Especiales automáticamente -->
         <record id="base.group_user" model="res.groups">
